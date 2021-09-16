@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.grid-container {
+  display: grid;
+  grid-template-column: auto auto auto;
+  background-color: #2196F3;
+  padding:0px;
+}
+.grid-container > div {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding:105px;
+}
+.row1 {
+  grid-column: 1 /span 2;
+  grid-row: 1;
+}
+.row3 {
+  grid-column: 3;
+  grid-row: 1/ span 3;
+  padding : 0px !important;
+ 
+}
+.col {
+height:50%;
+border-bottom:1px  solid #000;
+padding:0px 105px;
+}
+
+</style>
+</head>
+<body>
+
+
+<div class="grid-container">
+  <div class="row1"></div>
+  <div class="row2"></div>
+  <div class="row3"><div class="col"></div></div>  
+  <div class="row4"></div>
+  <div class="row5"></div>
+  <div class="row6"></div>  
+ 
+</div>
+
+</body>
+</html>

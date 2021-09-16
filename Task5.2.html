@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head><title>Grid using grid area</title>
+<style>
+/* .item1 { grid-area: a1;}
+.item2 { grid-area: a2;}
+.item3 { grid-area: a3;}
+.item4 { grid-area: a4;}
+.item5 { grid-area: a5;}
+.item6 { grid-area: a6;}
+.item7 { grid-area: a7;}
+.item8 { grid-area: a8;}
+.item9 { grid-area: a9;}
+.item10 { grid-area: a10;} */
+.item1 { grid-area: a1; width:150px;}
+.item2 { grid-area: a2; width:500px;}
+.item3 { grid-area: a3; width:240px}
+.item4 { grid-area: a4; width:500px;}
+.item5 { grid-area: a5; width:150px}
+.item6 { grid-area: a6; width:150px;}
+.item7 { grid-area: a7; width:500px;}
+.item8 { grid-area: a8; width:240px;}
+.item9 { grid-area: a9; width:500px;}
+.item10 { grid-area: a10; width:150px;}
+
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+  'a1 a2 a2 a3'
+  'a4 a4 a5 a3'
+  'a6 a7 a7 a8'
+  'a9 a9 a10 a8';
+  grid-gap: 0px;
+  background-color: #2196F3;
+  padding: 0px;
+}
+
+.grid-container > div {
+    background-color: rgb(255, 255, 255);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding:76px;
+  /* background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px; */
+}
+</style>
+</head>
+<body>
+
+<div class="grid-container">
+  <div class="item1"></div>
+  <div class="item2"></div>
+  <div class="item3"></div>  
+  <div class="item4"></div>
+  <div class="item5"></div>
+  <div class="item6"></div>
+  <div class="item7"></div>  
+  <div class="item8"></div>
+  <div class="item9"></div>
+  <div class="item10"></div>
+</div>
+
+</body>
+</html>
